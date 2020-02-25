@@ -1,0 +1,2 @@
+file add_users_to_ad_from_file.ps1 is powershell file for easy create new users in Active Directory
+
