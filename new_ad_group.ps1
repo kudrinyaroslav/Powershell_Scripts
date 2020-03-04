@@ -1,0 +1,1 @@
+﻿new-adgroup "Astrosoft Project" -path "ou=mailgroups, ou=ap, dc=aspj,dc=local" -GroupCategory Distribution -GroupScope global -PassThru -verbose
