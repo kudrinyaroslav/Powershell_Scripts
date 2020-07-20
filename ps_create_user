@@ -1,0 +1,14 @@
+new-aduser -name "vasily petrov" -givenname vasily `
+            -UserPrincipalName vasily.petrov@mir.dev `
+            -SamAccountName vasily.petrov `
+            -surname petrov `
+            -DisplayName "vasily petrov" `
+            -emailaddress vasily.petrov@mir.dev `
+            -Description "МИР(офис).Должность" `
+            -StreetAddress "Адрес" `
+            -City "Город" `
+            -MobilePhone "телефон" `
+            -Title 'Должность' `
+            -Company 'ООО "МИР"' `
+            -accountpassword(read-host -assecurestring "input password")  `
+            -enable $true
