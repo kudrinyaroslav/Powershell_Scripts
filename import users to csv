@@ -1,0 +1,5 @@
+$spb_users = get-aduser -searchbase "OU=MIR, OU=Users, OU=SPB, dc=astro, dc=local" -filter * -properties *
+$nov_users = get-aduser -searchbase "OU=MIR, OU=Users, OU=Novgorod, dc=astro, dc=local" -filter * -properties *
+$all_mir = $spb_users + $nov_users
+
+$all_mir| select-object name, city, Title, streetaddress, mail,Description,Company, mobilephone | export-csv -path c:\scripts\users.csv -encoding utf8
