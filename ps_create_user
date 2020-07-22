@@ -1,6 +1,7 @@
 new-aduser -name "vasily petrov" -givenname vasily `
             -UserPrincipalName vasily.petrov@mir.dev `
             -SamAccountName vasily.petrov `
+            -UserPrincipalName vasily.petrov@mir.dev \
             -surname petrov `
             -DisplayName "vasily petrov" `
             -emailaddress vasily.petrov@mir.dev `
