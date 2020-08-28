@@ -61,8 +61,7 @@ foreach($deleted_mailbox in $deleted_mailboxes){
         $destin_mail_guid = (Get-Mailbox -Identity $id_new_mailbox).exchangeguid
 
         # восстанавливаем в новый ящик удаленный
-        New-MailboxRestoreRequest -AllowLegacyDNMismatch -SourceMailbox $deleted_guid -TargetMailbox $destin_mail_guid
-
+	New-MailboxRestoreRequest -AllowLegacyDNMismatch -Batchname $deleted_mailbox.Alias -SourceMailbox $deleted_guid -TargetMailbox $destin_mail_guid 
 # создание запроса на восстановление ящиков
 ?????????????????????????????????????????
 
